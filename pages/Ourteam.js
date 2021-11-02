@@ -24,7 +24,7 @@ const OurTeam = ({ data_header }) => {
     <Layout header_data={data_header}>
 
       <SRLWrapper>
-        <div className="container-fluid  bg-no-repeat bg-cover pt-10  ">
+        <div className="container-fluid  bg-no-repeat bg-Admission bg-cover pt-10  ">
           <div className="p-5 md:grid md:grid-cols-4 sm:grid sm:grid-cols-2">
             {
 
