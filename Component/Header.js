@@ -25,7 +25,7 @@ const Header = ({header_data}) => {
         >
           <img
             className="h-20 w-15 md:mr-1 "
-            src={header_data?.data? header_data?.data[0]?.logo?.data?.full_url : "https://rosemarydn.com/images/logo.png"}
+            src={header_data?.data? header_data?.data[0]?.logo?.data?.full_url?.replace('http://', 'https://') : "https://rosemarydn.com/images/logo.png"}
             //  src="https://rosemarydn.com/images/logo.png"
           />
           <div className="  text-[#272d57] item-center ">
