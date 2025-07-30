@@ -13,7 +13,7 @@ const Contactus = ({data_header}) => {
         </div>
         <div className="mt-[15px] lg:mx-16 px-6     flex md:flex-row flex-col">
           <iframe className=" md:w-[600px] md:h-[450px] "
-            src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58641.48766725828!2d77.414846!3d23.276071!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x397c68397febe25f%3A0x99ef47adb46efdce!2sChhola%20Rd%2C%20Bhopal%2C%20Madhya%20Pradesh%2C%20India!5e0!3m2!1sen!2sus!4v1635159185450!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3664.9909704713373!2d77.4154722!3d23.279777799999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjPCsDE2JzQ3LjIiTiA3N8KwMjQnNTUuNyJF!5e0!3m2!1sen!2sin!4v1753776701449!5m2!1sen!2sin"
 
             style={{ border: "0" }}
             allowFullScreen=""
@@ -31,7 +31,8 @@ const Contactus = ({data_header}) => {
             {data_header?.data? data_header?.data[0]?.address : "  Maitretech School Bhopal"}
               {/* Dwarka Nagar , Nisatpura , Bhopal-462010 Phone: 0755-2740018 */}
             </address>
-            <div>phone: {data_header?.data? data_header?.data[0]?.phone : "111111211"}</div>
+            <div><strong>Landline:</strong> 0755-4440166</div>
+            <div><strong>phone:</strong> {data_header?.data? data_header?.data[0]?.phone : "111111211"}</div>
             <strong>Email:</strong>
             <address className="text-black">
               <a>

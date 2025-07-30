@@ -1,4 +1,9 @@
 import React, { Component } from "react";
+import { TbDeviceLandlinePhone } from "react-icons/tb";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaSquareInstagram } from "react-icons/fa6";
+import Link from 'next/link';
+
 const Footer = ({header_data}) => {
 
   // console.log(header_data)
@@ -9,7 +14,7 @@ const Footer = ({header_data}) => {
         <div className="">
           <div className="flex flex-row ">
             <img
-            src={header_data?.data? header_data?.data[0]?.logo?.data?.full_url : "https://rosemarydn.com/images/logo.png"}
+            src={header_data?.data? header_data?.data[0]?.logo?.data?.full_url?.replace('http://', 'https://') : "https://rosemarydn.com/images/logo.png"}
               // src="https://rosemarydn.com/images/logo.png"
               className=" h-[5rem] w-[5rem]"
             />
@@ -48,6 +53,18 @@ const Footer = ({header_data}) => {
 
           <div className="mt-2 ">
             <hr className="myLine " />
+          </div>
+
+          <span  className="flex flex-row items-center text-white">
+              <TbDeviceLandlinePhone />
+              <span className="ml-2 mt-2">
+                0755-4440166
+              </span>
+          </span>
+
+          <div className="mt-2 ">
+            <hr className="myLine " />
+            
           </div>
 
           <span className="flex flex-row items-center text-white">
@@ -226,7 +243,7 @@ const Footer = ({header_data}) => {
         </div>
         <div className="mt-3 md:mt-6">
           <h3 className= " text-[#e0d917] text-lg">Follow Us</h3>
-          <svg
+          {/* <svg
             className=" mb-2  text-white ml-[30px] w-[1.7rem] svg-inline-fa fa-facebook-square fa-w-14 fa-2x"
             aria-hidden="true"
             dataprefix="fab"
@@ -240,7 +257,17 @@ const Footer = ({header_data}) => {
               fill="currentColor"
               d="M448 80v352c0 26.5-21.5 48-48 48h-85.3V302.8h60.6l8.7-67.6h-69.3V192c0-19.6 5.4-32.9 33.5-32.9H384V98.7c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9H184v67.6h60.9V480H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48z"
             ></path>
-          </svg>
+          </svg> */}
+          <Link href={"https://www.facebook.com/people/Vidya-Bharti-HS-School-Chhola-Bhopal/61574639864011/"} >
+            <a target="_blank" rel="noopener noreferrer">
+              <IoLogoFacebook onClick={()=>{}} style={{width:"35px",height:"35px"}} className=" mb-2  text-white ml-[30px] w-[2rem] "/>
+            </a>
+          </Link>
+          <Link href={"https://www.instagram.com/vidya_bharti_chhola/"}>
+              <a target="_blank" rel="noopener noreferrer">
+                <FaSquareInstagram style={{width:"35px",height:"35px"}} className=" mb-2  text-white ml-[30px] w-[2rem] " />
+              </a>
+          </Link>
         </div>
       </div>
       <div className="bg-[#132f57] py-3 text-white flex flex-col md:flex-row md:justify-around justify-center text-center ">
