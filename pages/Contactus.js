@@ -31,7 +31,8 @@ const Contactus = ({data_header}) => {
             {data_header?.data? data_header?.data[0]?.address : "  Maitretech School Bhopal"}
               {/* Dwarka Nagar , Nisatpura , Bhopal-462010 Phone: 0755-2740018 */}
             </address>
-            <div>phone: {data_header?.data? data_header?.data[0]?.phone : "111111211"}</div>
+            <div><strong>Landline:</strong> 0755-4440166</div>
+            <div><strong>phone:</strong> {data_header?.data? data_header?.data[0]?.phone : "111111211"}</div>
             <strong>Email:</strong>
             <address className="text-black">
               <a>
