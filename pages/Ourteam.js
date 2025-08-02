@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import Layout from "../Component/Layout";
-import { SRLWrapper } from "simple-react-lightbox";
+
 
 const OurTeam = ({ data_header }) => {
 
@@ -23,7 +23,7 @@ const OurTeam = ({ data_header }) => {
   return (
     <Layout header_data={data_header}>
 
-      <SRLWrapper>
+
         <div className="container-fluid  bg-no-repeat bg-Admission bg-cover pt-10  ">
           <div className="p-5 md:grid md:grid-cols-4 sm:grid sm:grid-cols-2">
             {
@@ -43,7 +43,7 @@ const OurTeam = ({ data_header }) => {
               })}
           </div>
         </div>
-      </SRLWrapper>
+  
       
       {/* <div className="mx-5 ">
         <div className="grid grid-rows-1 mt-5 shadow md:grid md:grid-cols-4 gap-7" >
