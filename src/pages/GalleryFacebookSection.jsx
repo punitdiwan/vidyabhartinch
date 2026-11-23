@@ -21,12 +21,14 @@ const GalleryFacebookSection = ({ header_data }) => {
   const galleryItems = gallery_data?.data?.slice(0, 5) || [];
 
   // CMS Links
-  const instagramUrl = schoolData?.instagram || "";
+  const instagramUrl =
+    "https://www.instagram.com/vidya_bharti_school_chhola?jplx=MWdlamg5a3p6bW16eA==";
+
   const facebookUrl = schoolData?.facebook || "";
 
   // Instagram Embed
   const instagramEmbed = instagramUrl
-    ? `${instagramUrl.replace(/\/$/, "")}/embed`
+    ? `${instagramUrl.replace(/\?.*$/, "").replace(/\/$/, "")}/embed`
     : "";
 
   // Facebook Embed
@@ -127,7 +129,7 @@ const GalleryFacebookSection = ({ header_data }) => {
             </div>
 
             <a
-              href={instagramUrl || "#"}
+              href={instagramUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="bg-[#385a91] text-white px-8 py-3 rounded-md font-bold shadow-md hover:bg-[#1b3359] transition text-xs uppercase text-center w-full max-w-[220px]"
